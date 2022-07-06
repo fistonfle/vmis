@@ -34,13 +34,13 @@ function Sidebar() {
         id="navbarSupportedContent1"
       >
         <a
-          className="text-xl text-white pr-2 font-semibold mx-auto mt-10"
+          className="text-xl text-white pr-2 font-semibold mx-auto mt-10 flex"
           href="#"
         >
-          VMS
+          <AiFillCar className="m-auto text-2xl" /> VMS
         </a>
       </div>
-      <div className="flex flex-col ml-20 pt-5">
+      <div className="flex flex-col ml-20 pt-10">
         {/* Left links */}
         {links.map((link, i) => {
           return (

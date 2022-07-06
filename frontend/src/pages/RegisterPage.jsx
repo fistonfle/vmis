@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { AiFillCar } from "react-icons/ai";
 import { Alert, Form } from "../components";
 import { API_URL, post } from "../utils/common.util";
 import { useNavigate } from "react-router-dom";
@@ -47,7 +48,7 @@ export function RegisterPage() {
     <React.Fragment>
       <section className={"container h-screen flex flex-row bg-blue-500"}>
         <div className="  justify-center items-center flex m-auto">
-          <div className="bg-white p-10 rounded-md">
+          <div className="bg-white p-10 rounded-md flex flex-col">
             <div className="ml-0 flex flex-col ">
               {alert ? (
                 <Alert
@@ -57,9 +58,9 @@ export function RegisterPage() {
                 />
               ) : null}
             </div>
-            <h4 className="mb-6 uppercase text-4xl font-bold text-center m-auto w-full">
+            <h4 className="mb-6 uppercase text-4xl font-bold text-center m-auto  flex text-blue-500">
               {" "}
-              VMS
+              <AiFillCar className="my-auto text-2xl" /> VMS
             </h4>
             <div className="mx-auto">
               <Form
